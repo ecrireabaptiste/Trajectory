@@ -1,0 +1,23 @@
+class Leg:
+    def GetLegInfo(self):
+        self.__dist_angle = float(input('Enter distance or angle '))
+        self.__curbature = float(input('Enter Curbature '))
+        self.__maxspeed = float(input('Enter Max Speed '))
+    def PrintResult(self):
+        print(self.__dist_angle)
+        print(self.__curbature)
+        print(self.__maxspeed)
+
+Trajectory = []
+
+while(True):
+    leg = Leg()
+    leg.GetLegInfo()
+    Trajectory.append(Leg)
+    ch = input('Add More y/n?')
+    if(ch=='n'):break
+
+print('Results : ')
+
+for leg in Trajectory:
+    leg.PrintResult()
