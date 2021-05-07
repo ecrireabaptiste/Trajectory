@@ -13,7 +13,7 @@ Trajectory = []
 while(True):
     leg = Leg()
     leg.GetLegInfo()
-    Trajectory.append(Leg)
+    Trajectory.append(leg)
     ch = input('Add More y/n?')
     if(ch=='n'):break
 
