@@ -2,10 +2,12 @@ class Leg:
     def GetLegInfo(self):
         self.__dist_angle = float(input('Enter distance or angle '))
         self.__curbature = float(input('Enter Curbature '))
+        self.__printing = int(intput('Enter 1 if print '))
         self.__maxspeed = float(input('Enter Max Speed '))
     def PrintResult(self):
         print(self.__dist_angle)
         print(self.__curbature)
+        print(self.__printing)
         print(self.__maxspeed)
 
 Trajectory = []
